@@ -8,7 +8,13 @@ function BuildControl(props) {
         <button onClick={() => props.ortsNemeh(props.type)} className={css.btn}>
           Нэмэх
         </button>
-        <button className={css.btn}>Хасах</button>
+        <button
+          disabled={props.disable[props.type]}
+          onClick={() => props.ortsHasah(props.type)}
+          className={css.btn}
+        >
+          Хасах
+        </button>
       </div>
     </div>
   );
