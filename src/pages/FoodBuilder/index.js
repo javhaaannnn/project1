@@ -72,6 +72,7 @@ class FoodBuilder extends Component {
           <OrderSummary
             zahialga={this.state.ortsnud}
             mongol_ner={hoolni_ners}
+            price={this.state.totalPrice}
           />
         </Modal>
         <Food orts={this.state.ortsnud} />

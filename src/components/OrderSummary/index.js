@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Genaral/Button";
 
 function OrderSummary(props) {
   return (
@@ -12,6 +13,9 @@ function OrderSummary(props) {
           </li>
         ))}
       </ul>
+      <h4>Нийт үнэ:{props.price}</h4>
+      <Button btnName="Буцах" btnType="success" />
+      <Button btnName="Үргэлжлүүлэх" btnType="danger" />
     </div>
   );
 }
