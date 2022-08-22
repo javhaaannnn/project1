@@ -5,9 +5,8 @@ import style from "./style.module.css";
 function Modal(props) {
   return (
     <div>
-      <Shadow show={props.show} />
+      <Shadow show={props.show} closeModal={props.closeModal} />
       <div
-        onClick={props.closeModal}
         style={{
           transform: props.show ? "translateY(0)" : "translateY(-100vh)",
           opacity: props.show ? "1" : "0",
